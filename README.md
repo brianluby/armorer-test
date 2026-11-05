@@ -12,17 +12,27 @@ It grants no production authority.
 
 ## Boundaries and blockers
 
-No bootstrap catalog, Armorer lock, roots, runtime, reviewer approval, or signing
-identity has been approved for this consuming repository. Do not apply a catalog
-or bootstrap plan here. Armorer bootstrap examples render catalog-backed locks and
-workflow pins, which would introduce unapproved authority; they are intentionally
-not copied into this fixture. Rehearsal plan artifacts, if any, must remain outside
-this repository. No signing, attestation, privileged, or dispatch workflow exists
-or may be added before the relevant approvals.
+No bootstrap catalog, Armorer lock, roots, or runtime has been approved for this
+consuming repository. Do not apply a catalog or bootstrap plan here. Armorer
+bootstrap examples render catalog-backed locks and workflow pins, which would
+introduce unapproved authority; they are intentionally not copied into this fixture.
+Rehearsal plan artifacts, if any, must remain outside this repository. No signing,
+attestation, privileged, or dispatch workflow exists or may be added before the
+relevant approvals.
 
-The required future gates include consuming-owner approval of project policy and
-roots/catalog/runtime, reviewer identities, and signing environment approval. This
-fixture does not assert CI, release, publication, provenance, or signing readiness.
+## Owner-authorized single-owner rehearsal exception
+
+The owner authorized a **SINGLE-OWNER REHEARSAL EXCEPTION** for the configured
+`armorer-test` release-signing environment: reviewer `brianluby` (ID `3779002`),
+with self-review allowed, administrator bypass disabled, and the `main` branch as
+the only allowed deployment branch. Manual approval is still required. This
+exception does **not** satisfy independent-approval acceptance and does not relax
+any implementation verifier. It authorizes neither publication nor the missing
+roots, catalog, runtime, project-policy, workflow, attestation, or signing work in
+this fixture.
+
+This fixture does not assert CI, release, publication, provenance, or signing
+readiness.
 
 ## Local verification
 
