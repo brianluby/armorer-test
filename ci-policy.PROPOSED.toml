@@ -1,0 +1,17 @@
+# PROPOSED — copied from Armorer's dependency-free MIT library fixture.
+# This is not reviewed project policy and grants no production authority.
+# Replace only after consuming-owner review and approval.
+schema_version = 1
+
+[licenses]
+allow = ["MIT"]
+
+[advisories]
+exceptions = []
+
+[sources]
+allow_git = []
+
+[bans]
+multiple_versions = "warn"
+deny = []
